@@ -1,0 +1,1 @@
+import{o,p as r,__tla as _}from"./index-2c8f1a32.js";let e,i=Promise.all([(()=>{try{return _}catch{}})()]).then(async()=>{e=function(a,t){return o(a,l=>{l!==void 0&&(t.value=l)}),r(()=>a.value===void 0?t.value:a.value)}});export{i as __tla,e as u};

@@ -1,0 +1,12 @@
+import{k as E,gL as s,c as k,d as w,g as $,p as i,s as x,y as I,h as P,a0 as v,__tla as T}from"./index-2c8f1a32.js";import{u as O,f as R,__tla as W}from"./use-houdini-1f4096eb.js";let _,j=Promise.all([(()=>{try{return T}catch{}})(),(()=>{try{return W}catch{}})()]).then(async()=>{let f,h,u,y,b;f=r=>{const{primaryColor:t,successColor:a,warningColor:n,errorColor:l,infoColor:c,fontWeightStrong:g}=r;return{fontWeight:g,rotate:"252deg",colorStartPrimary:s(t,{alpha:.6}),colorEndPrimary:t,colorStartInfo:s(c,{alpha:.6}),colorEndInfo:c,colorStartWarning:s(n,{alpha:.6}),colorEndWarning:n,colorStartError:s(l,{alpha:.6}),colorEndError:l,colorStartSuccess:s(a,{alpha:.6}),colorEndSuccess:a}},h={name:"GradientText",common:E,self:f},u=h,y=k("gradient-text",`
+ display: inline-block;
+ font-weight: var(--n-font-weight);
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: #0000;
+ white-space: nowrap;
+ background-image: linear-gradient(var(--n-rotate), var(--n-color-start) 0%, var(--n-color-end) 100%);
+ transition:
+ --n-color-start .3s var(--n-bezier),
+ --n-color-end .3s var(--n-bezier);
+`),b=Object.assign(Object.assign({},x.props),{size:[String,Number],fontSize:[String,Number],type:{type:String,default:"primary"},color:[Object,String],gradient:[Object,String]}),_=w({name:"GradientText",props:b,setup(r){O();const{mergedClsPrefixRef:t,inlineThemeDisabled:a}=$(r),n=i(()=>{const{type:e}=r;return e==="danger"?"error":e}),l=i(()=>{let e=r.size||r.fontSize;return e&&(e=R(e)),e||void 0}),c=i(()=>{const e=r.color||r.gradient;if(typeof e=="string")return e;if(e){const d=e.deg||0,m=e.from,p=e.to;return`linear-gradient(${d}deg, ${m} 0%, ${p} 100%)`}}),g=x("GradientText","-gradient-text",y,u,r,t),S=i(()=>{const{value:e}=n,{common:{cubicBezierEaseInOut:d},self:{rotate:m,[v("colorStart",e)]:p,[v("colorEnd",e)]:z,fontWeight:C}}=g.value;return{"--n-bezier":d,"--n-rotate":m,"--n-color-start":p,"--n-color-end":z,"--n-font-weight":C}}),o=a?I("gradient-text",i(()=>n.value[0]),S,r):void 0;return{mergedClsPrefix:t,compatibleType:n,styleFontSize:l,styleBgImage:c,cssVars:a?void 0:S,themeClass:o==null?void 0:o.themeClass,onRender:o==null?void 0:o.onRender}},render(){const{mergedClsPrefix:r,onRender:t}=this;return t==null||t(),P("span",{class:[`${r}-gradient-text`,`${r}-gradient-text--${this.compatibleType}-type`,this.themeClass],style:[{fontSize:this.styleFontSize,backgroundImage:this.styleBgImage},this.cssVars]},this.$slots)}})});export{_,j as __tla};

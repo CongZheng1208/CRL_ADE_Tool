@@ -1,0 +1,1 @@
+import{aT as o,__tla as s}from"./index-2c8f1a32.js";let t,l=Promise.all([(()=>{try{return s}catch{}})()]).then(async()=>{t=function(a=!1){const{bool:e,setTrue:n,setFalse:r}=o(a);return{loading:e,startLoading:n,endLoading:r}}});export{l as __tla,t as u};

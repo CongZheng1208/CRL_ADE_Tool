@@ -1,0 +1,1 @@
+import{d as e,aC as l,aD as s,__tla as r}from"./index-2c8f1a32.js";let t,_=Promise.all([(()=>{try{return r}catch{}})()]).then(async()=>{let a;a={class:"h-full"},t=e({__name:"index",setup(n){return(c,o)=>(l(),s("div",a))}})});export{_ as __tla,t as default};
